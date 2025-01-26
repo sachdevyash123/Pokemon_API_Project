@@ -1,0 +1,134 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: linear-gradient(135deg, #f5c4db, #c3cfb5);
+  position: relative;
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  transition: transform 0.2s;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 200px;  
+  max-width: 250px;  
+  margin-right: 20px;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.info-container {
+  flex: 2;
+  min-width: 250px;
+  padding: 20px;
+  text-align: left;
+}
+
+.info-container h1 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.info-container p {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.info-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-container ul li {
+  font-size: 1rem;
+  color: #212529;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #198754;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+.card .back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .back-button:hover {
+  background-color: #5a6268;
+}
+
+h1 {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .detail-container .image-container,
+  .detail-container .info-container {
+    min-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .info-container p {
+    font-size: 1rem;
+  }
+
+  .info-container ul li {
+    font-size: 0.9rem;
+  }
+}
